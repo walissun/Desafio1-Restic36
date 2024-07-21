@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 30px; /* Adiciona espaçamento ao redor da tela */
+    box-sizing: border-box;
+}
+.mute-button {
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    color: rgb(255 255 255);
+    background-color: rgba(97, 82, 82, 0);
+    border-radius: 20%;
+    border: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cards {
+    display: flex;
+    gap: 20px; 
+}
+.cards .card1, .card2, .card3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.cards img {
+    width: 300px; 
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s
+}
+p{
+    margin-top: 9px;
+    color: #fafafa;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+.cards .card1:hover, .card2:hover, .card3:hover {
+    transform: scale(1.0); 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(5, 32, 237, 0.4); /* Efeito de neon no hover */
+}
+
+.cards .card1:hover img, .card2:hover img, .card3:hover img {
+    transform: scale(1.0); 
+}
+
+.cards .card1::before, .card2::before, .card3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(22, 22, 173, 0.2);
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cards .card1:hover::before, .card2:hover::before, .card3:hover::before {
+    opacity: 1;
+}

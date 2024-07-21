@@ -1,0 +1,46 @@
+@media (max-width: 720px) {
+    .cards {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .cards img {
+        width: 100px; 
+    }
+
+    .cards .card1 img {
+        
+        content: url('../Imagens/Avatar1P2.jpeg');
+    }
+
+    .cards .card2 img {
+        content: url('../Imagens/avatar2P2.jpeg'); 
+    }
+
+    .cards .card3 img {
+        content: url('../Imagens/AMBIENTE2.jpeg');
+    }
+
+}
+@media (max-width: 360px) {
+    .cards {
+        flex-direction: column;
+        margin-top: 210px;
+    }
+    .cards img {
+        width: 100px; 
+    }
+
+    .cards .card1 img {
+        
+        content: url('../Imagens/Avatar1P2.jpeg');
+    }
+
+    .cards .card2 img {
+        content: url('../Imagens/avatar2P2.jpeg'); 
+    }
+
+    .cards .card3 img {
+        content: url('../Imagens/AMBIENTE2.jpeg');
+    }
+
+}

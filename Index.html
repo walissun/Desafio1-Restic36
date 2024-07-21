@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/styles/responsividade.css">
+    <title>Desafio 1 restic36</title>
+</head>
+
+
+<body>
+
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="./Assets/Audio/GameOver.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <button id="muteButton" class="mute-button" onclick="toggleMute()">
+        <i id="muteIcon" class="fas fa-volume-up"></i>
+    </button>
+
+    <div class="cards">
+        <div class="card1">
+            <img src="./Assets/Imagens/Avatar1P1.jpeg" alt="">
+            <p>Aurora: Uma jovem em busca da família, foi sequestrada e usada como cobaia pela empresa Farmacêutica Vitória Régia.</p>
+        </div>
+        <div class="card2">
+            <img src="./Assets/Imagens/Avatar2P1.jpeg" alt="">
+            <p>Orion: Filho de um famoso bioengenheiro, herdou uma armadura nanotecnológica. Procura sua irmã, que foi sequestrada junto ao pai.</p>
+        </div>
+        <div class="card3">
+            <img src="./Assets/Imagens/AMBIENTE1.jpeg" alt="">
+            <p>Organização Vitória Régia: Empresa Farmacêutica com ligações ao submundo, conduz experimentos nas sombras para integrar nanotecnologia ao corpo humano.</p>
+        </div>
+    </div>
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="./Assets/video-bg/BG.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+
+<script src="./Assets/js/botao do audio.js" defer></script>
+</body>
+</html>
